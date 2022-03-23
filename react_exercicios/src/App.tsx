@@ -1,14 +1,16 @@
 import './App.css'
+import { ImageGallery } from './components/01_ImageGallery'
 import { HelloWorld } from './components/HelloWorld'
-import { ImageGallery } from './components/ImageGallery'
+import { TodayDateDisplay } from './components/TodayDateDisplay'
 
-function Home() {
+function App() {
   return (
-    <div className="App">
+    <div>
+      <TodayDateDisplay />
       <HelloWorld />
       <ImageGallery />
     </div>
   )
 }
 
-export default Home
+export default App

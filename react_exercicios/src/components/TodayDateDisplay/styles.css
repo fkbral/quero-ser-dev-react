@@ -1,0 +1,11 @@
+.date-display {
+  background-color: skyblue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-display p {
+  margin-left: 8px;
+}
