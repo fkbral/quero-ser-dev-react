@@ -2,22 +2,3 @@ body {
   max-width: 700px;
   margin: auto;
 }
-
-.image-gallery {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-
-  padding: 0;
-}
-
-.image-gallery li {
-  display: flex;
-  flex-basis: 33.33%;
-}
-
-.image-gallery img {
-  display: flex;
-  width: 100%;
-  object-fit: cover;
-}
