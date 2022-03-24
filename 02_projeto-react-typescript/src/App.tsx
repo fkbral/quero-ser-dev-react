@@ -14,6 +14,8 @@ function App() {
       
       <Button Icone={FaHeart} />
 
+      <Button texto='Teste' />
+
       <Button texto="Conheça nossos serviços" />
       <h1>Olá mundo</h1>
       <h2>{"Olá pessoal".toUpperCase()}</h2>

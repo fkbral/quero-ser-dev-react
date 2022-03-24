@@ -1,7 +1,21 @@
+import { ReactNode } from 'react'
+import { IconType } from 'react-icons/lib'
 import './styles.css'
 
-export function Button(props) {
-  const { id, texto, Icone } = props
+// interface IButtonProps {
+//   id?: string,
+//   texto?: string,
+//   Icone?: IconType,
+// }
+
+type ButtonProps = {
+  id?: string,
+  texto?: string,
+  Icone?: IconType,
+}
+
+export function Button(props: ButtonProps) {
+  const { Icone, id, texto } = props
 
   console.log(props.id)
   console.log(props.texto)
