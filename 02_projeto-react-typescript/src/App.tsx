@@ -1,5 +1,5 @@
 import './App.css'
-import { FaHeart, FaRegThumbsUp } from 'react-icons/fa'
+import { FaHeart, FaRegThumbsUp, FaShare } from 'react-icons/fa'
 import { Button } from './components/Button'
 import { TaskList } from './components/TaskList'
 
@@ -10,6 +10,12 @@ function App() {
         id="botao-1"
         texto="increva-se agora"
         Icone={FaRegThumbsUp}
+      />
+
+      <Button
+        texto="compartilhar" 
+        Icone={FaShare}
+        posicaoDoIcone={'direita'}
       />
       
       <Button Icone={FaHeart} />

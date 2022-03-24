@@ -11,18 +11,25 @@ import './styles.css'
 type ButtonProps = {
   id?: string,
   texto?: string,
+  posicaoDoIcone?: 'esquerda' | 'direita',
   Icone?: IconType,
 }
 
 export function Button(props: ButtonProps) {
-  const { Icone, id, texto } = props
+  const { Icone, id, texto, posicaoDoIcone } = props
 
   console.log(props.id)
   console.log(props.texto)
   console.log(props.Icone)
 
   return(
-    <button id={id} className='default-btn'>
+    <button 
+      id={id}
+      className={
+        `default-btn 
+        ${posicaoDoIcone === 'direita' ? 'icone-direita' : ''}`
+      }
+    >
       {Icone && <Icone />}
       {/* renderização condicional */}
       {texto 

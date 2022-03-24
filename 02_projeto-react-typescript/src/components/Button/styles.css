@@ -13,6 +13,10 @@
   gap: 10px;
 }
 
+.icone-direita {
+  flex-direction: row-reverse;
+}
+
 .default-btn + .default-btn {
   margin-top: 10px;
 }
