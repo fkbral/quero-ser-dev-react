@@ -1,55 +1,24 @@
 import './App.css'
+import { FaHeart, FaRegThumbsUp } from 'react-icons/fa'
+import { Button } from './components/Button'
+import { TaskList } from './components/TaskList'
 
 function App() {
-  const listaDeTarefas = [
-    {
-      nome: 'Dar comida para o gato',
-      categoria: 'pets',
-      concluida: false,
-    },
-    {
-      nome: 'Alimentar o peixe',
-      categoria: 'pets',
-      concluida: true,
-    },
-    {
-      nome: 'Estudar react',
-      categoria: 'desenvolvimento web',
-      concluida: false,
-    },
-  ]
   return (
     <div className="App">
-      <h1>Olá</h1>
-      <h1>{"Olá pessoal".toUpperCase()}</h1>
+      <Button
+        id="botao-1"
+        texto="increva-se agora"
+        Icone={FaRegThumbsUp}
+      />
+      
+      <Button Icone={FaHeart} />
 
-      <ul>
-        {/* <li>
-          <h3>Dar comida para o gato</h3>
-          <p>categoria: pets</p>
-        </li>
+      <Button texto="Conheça nossos serviços" />
+      <h1>Olá mundo</h1>
+      <h2>{"Olá pessoal".toUpperCase()}</h2>
 
-        <li>
-          <h3>Alimentar o peixe</h3>
-          <p>categoria: pets</p>
-        </li>
-
-        <li>
-          <h3>Estudar react</h3>
-          <p>categoria: desenvolvimento web</p>
-        </li> */}
-        {/* {listaDeTarefas[0].nome} */}
-        {/* {listaDeTarefas[1].nome} */}
-
-        {listaDeTarefas.map((tarefa) => {
-          return (
-            <li>
-              <h3>{tarefa.nome}</h3>
-              <p>categoria: {tarefa.categoria}</p>
-            </li>
-          )
-        })}
-      </ul>
+      <TaskList />
     </div>
   )
 }

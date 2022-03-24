@@ -1,0 +1,18 @@
+.default-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: orangered;
+  border: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.default-btn + .default-btn {
+  margin-top: 10px;
+}
