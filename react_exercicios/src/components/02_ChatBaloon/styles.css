@@ -1,0 +1,21 @@
+.chat-baloon {
+  min-width: 120px;
+
+  border-radius: 8px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.chat-box + .chat-box {
+  margin-top: 12px;
+}
+
+.sender {
+  background-color: skyblue;
+  color: #fff;
+}
+
+.receiver {
+  background-color: #dedede;
+  color: #333;
+}
