@@ -1,13 +1,14 @@
 import './styles.css'
 
 import { FaRegThumbsUp, FaShare, FaHeart } from "react-icons/fa";
-import { Button } from "../../components/Button";
 import { TaskList } from "../../components/TaskList";
+import { Link } from 'react-router-dom';
+import { Button } from "../../components/Button";
 
 export function Home() {
   return(
     <div>
-      <a href="/about">Página about</a>
+      <Link to="/about">Página about</Link>
 
       <Button
         id="botao-1"
