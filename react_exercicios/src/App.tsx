@@ -1,23 +1,16 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { ChatBaloon } from './components/02_ChatBaloon'
-import { ImageGallery } from './components/01_ImageGallery'
-import { HelloWorld } from './components/HelloWorld'
-import { TodayDateDisplay } from './components/TodayDateDisplay'
+import { Chat } from './pages/Chat'
+import { Gallery } from './pages/Gallery'
+import { Home } from './pages/Home'
 
 function App() {
   return (
-    <div>
-      <ChatBaloon type='sender' text='Olá Maria'/>
-      <ChatBaloon type='receiver' text='Olá Mel'/>
-      <ChatBaloon 
-        type='receiver'
-        text='Veja essa linda cidade'
-        imageUrl='https://source.unsplash.com/random/?city,night'
-      />
-      {/* <TodayDateDisplay />
-      <HelloWorld />
-      <ImageGallery /> */}
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} ></Route>
+      <Route path='/galeria' element={<Gallery />} ></Route>
+      <Route path='/chat' element={<Chat />} ></Route>
+    </Routes>
   )
 }
 
