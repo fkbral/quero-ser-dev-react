@@ -1,7 +1,13 @@
+import { useState } from 'react'
+import { Button } from '../Button'
 import './styles.css'
 
 export function OperationSum() {
-  let soma = 0
+  // let soma = 0
+  // const [primeraLetra, segundaLetra] = 'professor'
+  const [soma, setSoma] = useState(0)
+  const [historico, setHistorico] = useState([] as number[])
+  console.log(soma)
 
   // React.MouseEvent<HTMLButtonElement, MouseEvent>
   function handleSomar(event: React.FormEvent<HTMLFormElement>) {
@@ -16,9 +22,16 @@ export function OperationSum() {
     console.log(numero1)
     console.log(numero2)
 
-    soma = numero1 + numero2
+    const acumulador = numero1 + numero2
 
-    alert(soma)
+    // soma = numero1 + numero2
+    setSoma(acumulador)
+
+    console.log(historico[2])
+
+    setHistorico((historicoAntigo) => {
+      return [...historicoAntigo, acumulador]
+    })
   }
 
   return(
@@ -38,9 +51,15 @@ export function OperationSum() {
         </div>
 
         {/* <button type="button" onClick={handleSomar}>botao 1</button> */}
-        <button type='submit'>somar</button>
+        <Button texto='somar'></Button>
       </form>
       <h1>Resultado da Soma: {soma}</h1>
+      <h2>Histórico de operações passadas</h2>
+      <ul>
+        {historico.map(resultado => {
+          return <li>{resultado}</li>
+        })}
+      </ul>
     </>
   )
 }
