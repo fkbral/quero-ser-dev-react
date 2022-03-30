@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { About } from './pages/About'
-import { Calculadora } from './pages/Calculadora'
+import { OperacoesMatematicas } from './pages/OperacoesMatematicas'
 import { DesignSystemButtons } from './pages/DesignSystemButtons'
 import { Home } from './pages/Home'
 import { Tasks } from './pages/Tasks'
@@ -14,6 +14,7 @@ function App() {
         <Route path="design-system-buttons" element={<DesignSystemButtons />} />
         <Route path="about" element={<About />} />
         <Route path="task-list" element={<Tasks />} />
+        <Route path="operacoes" element={<OperacoesMatematicas />} />
       </Routes>
     </div>
   )

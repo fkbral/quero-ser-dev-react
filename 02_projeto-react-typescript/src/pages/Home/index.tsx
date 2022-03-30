@@ -9,11 +9,8 @@ export function Home() {
         <Link to="/about">About</Link>
         <Link to="/design-system-buttons">Buttons Design System</Link>
         <Link to="/task-list">Task list</Link>
-        <Link to="/calculator">Calculator</Link>
+        <Link to="/operacoes">Operações Matemáticas</Link>
       </div>
-      <h1>Olá mundo</h1>
-
-      <h2>{"Olá pessoal".toUpperCase()}</h2>
     </div>
   )
 }

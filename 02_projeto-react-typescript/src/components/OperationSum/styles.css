@@ -1,0 +1,19 @@
+.math-operations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.math-operations div {
+  display: flex;
+}
+
+.math-operations div + div {
+  margin-top: 8px;
+}
+
+.math-operations input {
+  flex: 1;
+  font-size: 20px;
+  display: block;
+}
