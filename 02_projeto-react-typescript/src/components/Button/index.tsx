@@ -18,9 +18,9 @@ type ButtonProps = {
 export function Button(props: ButtonProps) {
   const { Icone, id, texto, posicaoDoIcone } = props
 
-  console.log(props.id)
-  console.log(props.texto)
-  console.log(props.Icone)
+  // console.log(props.id)
+  // console.log(props.texto)
+  // console.log(props.Icone)
 
   return(
     <button 
