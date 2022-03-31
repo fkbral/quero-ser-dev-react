@@ -8,15 +8,18 @@ import './styles.css'
 //   Icone?: IconType,
 // }
 
-type ButtonProps = {
-  id?: string,
-  texto?: string,
+type ButtonProps = 
+React.ButtonHTMLAttributes<HTMLButtonElement> &
+{
+  // id?: string,
+  // texto?: string,
+  // children: ReactNode,
   posicaoDoIcone?: 'esquerda' | 'direita',
   Icone?: IconType,
 }
 
 export function Button(props: ButtonProps) {
-  const { Icone, id, texto, posicaoDoIcone } = props
+  const { Icone, posicaoDoIcone, children, ...demaisProps } = props
 
   // console.log(props.id)
   // console.log(props.texto)
@@ -24,19 +27,22 @@ export function Button(props: ButtonProps) {
 
   return(
     <button 
-      id={id}
+      // id={id}
+      // type={type}
       className={
         `default-btn 
         ${posicaoDoIcone === 'direita' ? 'icone-direita' : ''}`
       }
+      {...demaisProps}
     >
       {Icone && <Icone />}
       {/* renderização condicional */}
-      {texto 
+      {/* {texto 
         ? <p>{texto}</p>
         : <></>
-      }
+      } */}
       {/* {temTexto && <p>Text only</p>} */}
+      {children}
     </button>
   )
 }

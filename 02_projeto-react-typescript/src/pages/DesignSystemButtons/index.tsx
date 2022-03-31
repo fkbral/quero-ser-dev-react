@@ -4,23 +4,42 @@ import { Button } from "../../components/Button";
 export function DesignSystemButtons() {
   return(
     <>
-      <Button
-        id="botao-1"
-        texto="increva-se agora"
-        Icone={FaRegThumbsUp}
-      />
+      <button>
+        increva-se agora
+      </button>
 
       <Button
-        texto="compartilhar" 
+        type="submit"
+        title="qualquer coisa"
+        id="botao-1"
+        Icone={FaRegThumbsUp}
+      >
+        increva-se agora
+      </Button>
+
+      {/* <Button
+        id="botao-1"
+      >
+        increva-se agora
+        <FaRegThumbsUp />
+      </Button> */}
+
+      <Button
         Icone={FaShare}
         posicaoDoIcone={'direita'}
-      />
+      >
+        compartilhar
+      </Button>
       
       <Button Icone={FaHeart} />
 
-      <Button texto='Teste' />
+      <Button>
+        <img src="https://github.com/fkbral.png" alt="" height={60} />
+        <h1>exemplo</h1>
+        <span>Teste</span>
+      </Button>
 
-      <Button texto="Conheça nossos serviços" />
+      <Button>Conheça nossos serviços</Button>
     </>
   )
 }
