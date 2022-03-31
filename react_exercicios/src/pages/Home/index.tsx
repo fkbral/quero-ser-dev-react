@@ -7,6 +7,7 @@ export function Home() {
       <Link to={'/galeria'}>Exercício 1: Galeria de Imagens</Link>
       <Link to={'/chat'}>Exercício 2: Chat</Link>
       <Link to={'/contador'}>Exercício 4: Contador</Link>
+      <Link to={'/lista-de-presenca'}>Exercício 5: Lista de Presença dos Alunos</Link>
     </div>
   )
 }
