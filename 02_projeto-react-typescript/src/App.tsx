@@ -5,6 +5,7 @@ import { OperacoesMatematicas } from './pages/OperacoesMatematicas'
 import { DesignSystemButtons } from './pages/DesignSystemButtons'
 import { Home } from './pages/Home'
 import { Tasks } from './pages/Tasks'
+import { AnimalFacts } from './pages/AnimalFacts'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="task-list" element={<Tasks />} />
         <Route path="operacoes" element={<OperacoesMatematicas />} />
+        <Route path="animal-facts" element={<AnimalFacts />} />
       </Routes>
     </div>
   )

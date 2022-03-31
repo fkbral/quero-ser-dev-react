@@ -10,6 +10,7 @@ export function Home() {
         <Link to="/design-system-buttons">Buttons Design System</Link>
         <Link to="/task-list">Task list</Link>
         <Link to="/operacoes">Operações Matemáticas</Link>
+        <Link to="/animal-facts">Fatos sobre animais</Link>
       </div>
     </div>
   )
