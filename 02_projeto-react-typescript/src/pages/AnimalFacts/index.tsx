@@ -76,7 +76,7 @@ export function AnimalFacts() {
         <button>Search for facts</button>
       </form>
 
-      <h2>{animalType} facts</h2>
+      {animalType && <h2>{animalType} facts</h2> }
       <ul>
         {facts.length > 0 
           ? facts.map(fact => {
@@ -85,7 +85,7 @@ export function AnimalFacts() {
               <p>{fact.text}</p>
             </li>
             )})
-          : <p>No facts found for <strong>{animalType}</strong></p>
+          : animalType && <p>No facts found for <strong>{animalType}</strong></p>
         }
       </ul>
     </>
