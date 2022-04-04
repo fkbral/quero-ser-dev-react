@@ -8,6 +8,7 @@ export function Home() {
       <Link to={'/chat'}>Exercício 2: Chat</Link>
       <Link to={'/contador'}>Exercício 4: Contador</Link>
       <Link to={'/lista-de-presenca'}>Exercício 5: Lista de Presença dos Alunos</Link>
+      <Link to={'/perfil-github'}>Exercício 6: Perfil Github</Link>
     </div>
   )
 }
