@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './styles.css'
+// import { v4 as uuid } from 'uuid'
 
 type GithubUserProfile = {
   name: string
@@ -88,6 +89,7 @@ export function GithubProfile() {
       <ul>
         {githubUserRepositories.map(repo => {
           return (
+            // <li key={uuid()}>
             <li key={repo.id}>
               <p><strong>nome:</strong> {repo.name}</p>
               <p><strong>descrição:</strong> {repo.description ? repo.description : 'sem descrição'}</p>

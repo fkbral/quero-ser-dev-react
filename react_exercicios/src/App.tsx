@@ -6,6 +6,7 @@ import { ControleDePresenca } from './pages/ControleDePresenca'
 import { Gallery } from './pages/Gallery'
 import { GithubProfile } from './pages/GithubProfile'
 import { Home } from './pages/Home'
+import { ThemedPage } from './pages/ThemedPage'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Route path='/chat' element={<Chat />} ></Route>
       <Route path='/contador' element={<Contador />} ></Route>
       <Route path='/lista-de-presenca' element={<ControleDePresenca />} ></Route>
-      <Route path='/perfil-github' element={<GithubProfile />} ></Route>
+      <Route path='/perfil-github' element={<GithubProfile />}></Route>
+      <Route path='/pagina-light-dark' element={<ThemedPage />}></Route>
     </Routes>
   )
 }
