@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "camiseta branca",
+      "value": 30
+    },
+    {
+      "name": "calça jeans",
+      "value": 140
+    },
+    {
+      "name": "Saia",
+      "value": 70
+    }
+  ]
+}
