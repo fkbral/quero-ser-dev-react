@@ -8,11 +8,11 @@
   height: 100vh;
 }
 
-.theme-light {
-  background: #fff;
+.theme-light.theme-light {
+  background-color: #fff;
 }
 
-.theme-dark {
+.theme-dark.theme-dark {
   color: #dedede;
   background-color: #000;
 }

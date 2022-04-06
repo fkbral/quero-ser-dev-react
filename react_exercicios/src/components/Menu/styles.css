@@ -1,0 +1,10 @@
+.app-menu {
+  background-color: red;
+  color: black;
+}
+
+.app-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
