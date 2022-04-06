@@ -6,19 +6,24 @@ type GithubUserProfile = {
   followers: number
   following: number
   bio: string
+  created_at: Date
+  updated_at: Date
 }
 
 type GithubRepo = {
   id: string
   name: string
+  html_url: string
   description: string
 }
 
 export function GithubProfile() {
   const [githubProfile, setGithubProfile] =
    useState({} as GithubUserProfile)
+  // const [githubUserRepositories, setGithubUserRepositories] =
+  //  useState<GithubRepo[]>([])
   const [githubUserRepositories, setGithubUserRepositories] =
-   useState<GithubRepo[]>([])
+   useState([] as GithubRepo[])
 
   const [isLoadingProfile, setIsLoadingProfile] = useState(false)
   // let githubProfile: GithubUserProfile = {} as GithubUserProfile
@@ -84,9 +89,13 @@ export function GithubProfile() {
         {githubUserRepositories.map(repo => {
           return (
             <li key={repo.id}>
-            <p><strong>nome:</strong> {repo.name}</p>
-            <p><strong>bio:</strong> {repo.description}</p>
-          </li>
+              <p><strong>nome:</strong> {repo.name}</p>
+              <p><strong>descrição:</strong> {repo.description ? repo.description : 'sem descrição'}</p>
+              <p>
+                <strong>link de acesso:</strong> 
+                <a href={repo.html_url} target="_blank"> acessar repositório</a>
+              </p>
+            </li>
           )})
         }
       </ul>
