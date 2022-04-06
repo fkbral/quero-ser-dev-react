@@ -9,7 +9,7 @@ export function ThemedPage() {
 
   // function handleClick() {
   //   setTheme(
-  //     (previouState) =>  previouState === 'light' ? 'dark' : 'dark')
+  //     (previousState) =>  previousState === 'light' ? 'dark' : 'dark')
   //   }
   // }
 
@@ -19,8 +19,7 @@ export function ThemedPage() {
       <button
         onClick={() => setTheme(
           (previousState) =>  previousState === 'light' ? 'dark' : 'light'
-        )
-        }
+        )}
       >
           Aternar tema
       </button>
