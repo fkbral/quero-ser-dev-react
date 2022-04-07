@@ -12,6 +12,7 @@ export function Home() {
         <Link to="/operacoes">Operações Matemáticas</Link>
         <Link to="/animal-facts">Fatos sobre animais</Link>
         <Link to="/fake-products">Acesso à página de API rest fake de produtos</Link>
+        <Link to="/fake-products-axios">Acesso à página de API rest fake de produtos com axios</Link>
       </div>
     </div>
   )

@@ -7,6 +7,7 @@ import { Home } from './pages/Home'
 import { Tasks } from './pages/Tasks'
 import { AnimalFacts } from './pages/AnimalFacts'
 import { FakeProductsApiPage } from './pages/FakeProductsApiPage'
+import { FakeProductsApiAxiosPage } from './pages/FakeProductsApiAxiosPage'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="operacoes" element={<OperacoesMatematicas />} />
         <Route path="animal-facts" element={<AnimalFacts />} />
         <Route path="fake-products" element={<FakeProductsApiPage />} />
+        <Route path="fake-products-axios" element={<FakeProductsApiAxiosPage />} />
       </Routes>
     </div>
   )
