@@ -1,16 +1,79 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "camiseta branca",
       "value": 30
     },
     {
+      "id": 2,
       "name": "calça jeans",
       "value": 140
     },
     {
+      "id": 3,
       "name": "Saia",
       "value": 70
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 4
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 5
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 6
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 7
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 8
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 9
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 10
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 11
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 12
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 13
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 14
+    },
+    {
+      "name": "meias",
+      "value": 8,
+      "id": 15
     }
   ]
 }

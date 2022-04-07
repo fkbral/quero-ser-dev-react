@@ -6,6 +6,7 @@ import { DesignSystemButtons } from './pages/DesignSystemButtons'
 import { Home } from './pages/Home'
 import { Tasks } from './pages/Tasks'
 import { AnimalFacts } from './pages/AnimalFacts'
+import { FakeProductsApiPage } from './pages/FakeProductsApiPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="task-list" element={<Tasks />} />
         <Route path="operacoes" element={<OperacoesMatematicas />} />
         <Route path="animal-facts" element={<AnimalFacts />} />
+        <Route path="fake-products" element={<FakeProductsApiPage />} />
       </Routes>
     </div>
   )

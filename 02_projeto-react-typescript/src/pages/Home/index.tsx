@@ -11,6 +11,7 @@ export function Home() {
         <Link to="/task-list">Task list</Link>
         <Link to="/operacoes">Operações Matemáticas</Link>
         <Link to="/animal-facts">Fatos sobre animais</Link>
+        <Link to="/fake-products">Acesso à página de API rest fake de produtos</Link>
       </div>
     </div>
   )
